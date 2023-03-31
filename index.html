@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Min låneberäkningssida</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="top-dog">
+      <h1>Studentlåneberäkning</h1>
+    </div>
+    <div class="row">
+    <div class="text-container">
+      <div class="text-container">
+      <p>Har du precis som många andra gått i tankarna att börja studera, men du oroar dig om pengarna som du går miste om från ditt nuvarande jobb under studietiden?</p>
+      <p>Med denna kalkyl så ser du hur lång tid det kommer att ta att tjäna ihop pengarna du gått miste om med din potentiella lön du kommer få när du studerat klart</p>
+    </div>
+    </div>
+    <div class="input-container">
+      <p id="question"></p>
+      <p id="result" style="display:none"></p>
+        <input type="number" id="answer" placeholder="Skriv ditt svar här" onkeydown="runFunctionOnEnter(event)">
+        <button class="button button1" id="submit" onclick="answerQuestion()">Svara</button>
+        <button class="button button1" onclick="resetQuestions()">Tillbaka</button>
+    </div>
+  </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
